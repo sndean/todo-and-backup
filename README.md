@@ -12,16 +12,20 @@ These include accounts, programs, tools, and directories. Overall, it is only se
  
   * ~/Dropbox/Notes
   
+    * For the todo list, use the todo.org file
+      - It may be necessary to specifically put out the top level (grep '* ') for Reminders-based work
+      - Possibly use refile-beorg.org for todo list using beorg
+  
   * ~/Dropbox/org
 
 * bitbar: https://getbitbar.com/
 
-  * Todo List: https://getbitbar.com/plugins/Tools/todolist.2m.sh
+  * Todo List bitbar plugin: https://getbitbar.com/plugins/Tools/todolist.2m.sh
 
-* Reminders:
+* Apple Reminders app:
 https://support.apple.com/en-us/ht205890
 
-* reminders-cli:
+* reminders-cli, a commandline interface for Reminders:
 https://github.com/keith/reminders-cli
 
 * ~/.bashrc
