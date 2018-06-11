@@ -1,5 +1,6 @@
-# copyImportant
-How I backup stuff
+# Todo and backup
+
+How I deal with Todo lists and backing up data
 
 ![](https://github.com/sndean/copyImportant/raw/master/example.png)
 
