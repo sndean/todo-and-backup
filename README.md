@@ -26,6 +26,8 @@ https://github.com/keith/reminders-cli
 
 * ~/.bashrc
 
+  * `backup` function [here](/.bashrc)
+
 * ~/BackupNotes
 
 * beorg: http://beorgapp.com/
