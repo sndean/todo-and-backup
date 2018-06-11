@@ -20,3 +20,15 @@ function backup () {
 	     
     echo -e "\ncopied at:" $(date +%m/%d/%y..%H:%M)
 }
+
+
+function todo () {
+IFS=$'\n' read -d '' -r -a lines < /Users/snd/Dropbox/Notes/todo.org
+num1=$(wc -l < /Users/snd/Dropbox/Notes/todo.org)
+num=$((num1 - 1))
+
+for ((i=0; i<=$num; i++)); do
+    # printf '%s\n' "${lines[$i]}"
+    reminders add Today "${lines[$i]}"
+done
+}
