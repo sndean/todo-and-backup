@@ -6,36 +6,29 @@ How I deal with Todo lists and backing up data
 
 ## Things you need:
 
+These include accounts, programs, tools, and directories. Overall, it is only set up to work on macOS, but pieces of it will certain be useable on a Linux machine.
 
-bitbar: 
-https://getbitbar.com/
+* A Dropbox account
+ 
+  * ~/Dropbox/Notes
+  
+  * ~/Dropbox/org
 
-Todo List:
-https://getbitbar.com/plugins/Tools/todolist.2m.sh
+* bitbar: https://getbitbar.com/
 
-Reminders:
+  * Todo List: https://getbitbar.com/plugins/Tools/todolist.2m.sh
+
+* Reminders:
 https://support.apple.com/en-us/ht205890
 
-reminders-cli:
+* reminders-cli:
 https://github.com/keith/reminders-cli
 
--------------
+* ~/.bashrc
 
-A Dropbox account
+* ~/BackupNotes
 
-~/.bashrc
+* beorg: http://beorgapp.com/
 
-~/Dropbox/Notes
+* ~/org
 
-~/BackupNotes
-
-beorg:
-http://beorgapp.com/
-
--------------
-
-~/org
-
-~/Dropbox/org
-
--------------
