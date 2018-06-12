@@ -32,6 +32,16 @@ https://github.com/keith/reminders-cli
 
   * `backup` function [here](/.bashrc)
 
+    * Backs up files contained within ~/org to ~/Dropbox/org
+    * Copies notes from ~/Dropbox/Notes to ~/BackupNotes
+    * Copies ~/emacs.d/, ~/.bashrc, and ~/.bash_profile
+  
+  * `todo` function [here](/.bashrc)
+
+    * Currently takes lines from ~/Dropbox/Notes/todo.org 
+      - Counts them (and subtracts 1 (for the empty new line at the end))
+      - Iterates through them, adding them to the `Today` Reminders todo list via the reminders-cli.
+
 * ~/BackupNotes
 
 * beorg: http://beorgapp.com/
