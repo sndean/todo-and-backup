@@ -23,12 +23,9 @@ function backup () {
 
 
 function todo () {
-IFS=$'\n' read -d '' -r -a lines < /Users/snd/Dropbox/Notes/todo.org
-num1=$(wc -l < /Users/snd/Dropbox/Notes/todo.org)
-num=$((num1 - 1))
+    mapfile -t lines < <(grep '* ' /Users/snd/Dropbox/Notes/refile-beorg.org)
 
-for ((i=0; i<=$num; i++)); do
-    # printf '%s\n' "${lines[$i]}"
-    reminders add Today "${lines[$i]}"
-done
+    for (( i=0; i<${#lines[@]}; i++)); do
+	reminders add Today "${lines[$i]}"
+    done
 }
