@@ -23,7 +23,7 @@ function backup () {
 
 
 function todo () {
-    mapfile -t lines < <(grep '* ' /Users/snd/Dropbox/Notes/refile-beorg.org)
+    mapfile -t lines < <(grep '* TODO' /Users/snd/Dropbox/Notes/refile-beorg.org)
 
     for (( i=0; i<${#lines[@]}; i++)); do
 	reminders add Today "${lines[$i]}"
