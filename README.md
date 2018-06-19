@@ -18,7 +18,10 @@ These include accounts, programs, tools, and directories. Overall, it is only se
 
 * bitbar: https://getbitbar.com/
 
-  * Todo List bitbar plugin: https://getbitbar.com/plugins/Tools/todolist.2m.sh
+  * Todo List plugin: https://getbitbar.com/plugins/Tools/todolist.2m.sh
+  * Slightly modified Github Contribution plugin: https://getbitbar.com/plugins/Dev/GitHub/github-contribution.10m.rb
+  * Weather - OpenWeatherMap plugin: https://getbitbar.com/plugins/Weather/OpenWeatherMap/weather.15m.py
+  * Clock with calendar plugin: https://getbitbar.com/plugins/Time/CalendarLite.1m.sh
 
 * Apple Reminders app:
 https://support.apple.com/en-us/ht205890
