@@ -1,7 +1,8 @@
 orgdir="/Users/snd/org/"
 dropb="/Users/snd/Dropbox/"
 dropb_org="/Users/snd/Dropbox/org/"
-arr4=("$dropb_org") # An array, to add thing in addition to Dropbox, e.g., SpiderOak
+arr=("$dropb_org") # An array, to which directories
+                   # other than Dropbox can be added, e.g., SpiderOak
 
 function backup () {
     rsync -avz --delete /Users/snd/.emacs.d/ /Users/snd/org/CS/Shell/Emacs/dot_emacs.d/;
@@ -14,7 +15,7 @@ function backup () {
     echo -e "Copied contents of ~/Dropbox/Notes/ to ~/BackupNotes/";
     echo -e "Now copying all of the other important directories and files\n";
 
-    for i in "${arr4[@]}";{
+    for i in "${arr[@]}";{
         rsync -avz --delete "$orgdir" "$i"
     }
 	     
