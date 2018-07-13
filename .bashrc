@@ -27,6 +27,8 @@ function todo () {
     mapfile -t lines < <(grep '* TODO' /Users/snd/Dropbox/Notes/refile-beorg.org)
     mapfile -t current_todo < <(reminders show Today)
 
+    printf '%s\n' "${current_todo[@]}" > /Users/snd/Dropbox/Notes/current_todo.org
+    
     for (( i=0; i<${#current_todo[@]}; i++)); do
 	reminders complete Today 0
     done
