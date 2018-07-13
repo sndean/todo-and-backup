@@ -15,6 +15,12 @@ These include accounts, programs, tools, and directories. Overall, it is only se
     * For the todo list, use the `refile-beorg.org` file that's default in beorg
   
   * `~/Dropbox/org`
+  
+* New Tab Redirect: https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna
+  
+  * Displays the `current_todo.org` created in ~/Dropbox/Notes
+  
+      - Always update tab, not redirect
 
 * bitbar: https://getbitbar.com/
 
@@ -49,4 +55,6 @@ https://github.com/keith/reminders-cli
 * beorg: http://beorgapp.com/
 
 * `~/org`
+
+
 
