@@ -1,3 +1,4 @@
+
 orgdir="/Users/snd/org/"
 dropb="/Users/snd/Dropbox/"
 dropb_org="/Users/snd/Dropbox/org/"
@@ -5,6 +6,8 @@ arr=("$dropb_org") # An array, to which directories
                    # other than Dropbox can be added, e.g., SpiderOak
 
 function backup () {
+    # Backup-related
+    
     rsync -avz --delete /Users/snd/.emacs.d/ /Users/snd/org/CS/Shell/Emacs/dot_emacs.d/;
     cp ~/.bashrc /Users/snd/org/CS/Shell/;
     cp ~/.bash_profile /Users/snd/org/CS/Shell/;
@@ -20,10 +23,9 @@ function backup () {
     }
 	     
     echo -e "\ncopied at:" $(date +%m/%d/%y..%H:%M)
-}
 
-
-function todo () {
+    # TODO-related
+    
     mapfile -t lines < <(grep '* TODO' /Users/snd/Dropbox/Notes/refile-beorg.org)
     mapfile -t current_todo < <(reminders show Today)
 
